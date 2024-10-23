@@ -20,10 +20,10 @@ Any frontend project that looks more like a static application
 should use NextJS. Otherwise, for App-like pages we use React with [Vite](https://vitejs.dev/guide/) bundler.
 If project requires monorepo we use [TurboRepo](https://turbo.build/).
 
-For styling and quick prototypes - [TailwindCSS](https://tailwindcss.com/docs/guides/nextjs) + [clsx](https://www.npmjs.com/package/clsx) to simplify work with className.
-If TailwindCSS is not enough and we need to cover more difficult cases, such as complex styles based on props, we go with [StyledComponents](https://styled-components.com/).
+For styling and quick prototypes - [TailwindCSS](https://tailwindcss.com/docs/guides/nextjs) + [clsx](https://www.npmjs.com/package/clsx) + tailwind-merge to simplify work with className.
+If TailwindCSS is not enough and we need to cover more difficult cases, such as complex styles based on props, we go with [StyledComponents](https://styled-components.com/). But its not siutable with Next14.
 
-Component library that we prefer is [ChakraUI](https://chakra-ui.com/)
+Component library that we prefer is [Shadcn/ui](https://ui.shadcn.com/)
 
 State management should be as simple as possible and in most cases React context should be enough.
 However, for bigger and complex state we can use [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction),
@@ -40,13 +40,13 @@ If you need some form then either [Formik](https://formik.org/) (complex) or [Re
 
 ## Base
 
-1. [NextJS](https://nextjs.org/docs) or React with [Vite](https://vitejs.dev/guide/)
+1. [NextJS 14](https://nextjs.org/docs) or React with [Vite](https://vitejs.dev/guide/)
 
 ## Style and Components
 
-1. [TailwindCSS](https://tailwindcss.com/docs/guides/nextjs) + [clsx](https://www.npmjs.com/package/clsx)
-2. [StyledComponents](https://styled-components.com/)
-3. [ChakraUI](https://chakra-ui.com/)
+1. [TailwindCSS](https://tailwindcss.com/docs/guides/nextjs) + [clsx](https://www.npmjs.com/package/clsx) +  tailwind-merge
+2. [Shadcn/ui](https://ui.shadcn.com/) based on [Radix-ui](https://www.radix-ui.com/) when Next14 is used
+3. [StyledComponents](https://styled-components.com/)
 
 ## Data fetching
 
